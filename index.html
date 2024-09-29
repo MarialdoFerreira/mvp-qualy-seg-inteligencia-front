@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>IA -  Análise de Crédito</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Análise de Crédito de Clientes baseado IA</h2>
+            <p>Este sistema foi desenvolvido fazer predição de Clientes com possibilidade de Inadimplir.</p>
+            <p>necessário preencher os dados abaixo do cliente e clicar em "Diagnosticar".</p>
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newIdade" placeholder="Idade">
+        <div>
+            <select type="text" id="newSexo">
+                <option disabled selected>__GENERO__</option>
+                <option value="0">Feminino</option>
+                <option value="1">Masculino</option>
+            </select>
+        </div>
+        <input type="text" id="newDependentes" placeholder="Dependentes">
+<!--        <input type="text" id="newSexo" placeholder="Sexo"> -->
+        <div >
+            <select type="text" id="newEscolaridade">
+                <option disabled selected>__ESCOLARIDADE__</option>
+                <option value="0">Ensino medio</option>
+                <option value="1">Mestrado</option>
+                <option value="2">Sem educacao formal</option>
+                <option value="3">Graduacao</option>
+                <option value="4">Doutorado</option>
+            </select>
+        </div>
+<!--        <input type="text" id="newEscolaridade" placeholder="Escolaridade"> -->
+        <div >
+            <select type="text" id="newEstadoCivil">
+                <option disabled selected>__ESTADO CIVIL__</option>
+                <option value="0">Solteiro</option>
+                <option value="1">Divorciado</option>
+                <option value="2">casado</option>
+                <option value="3">Viuvo</option>
+            </select>
+        </div>
+<!--        <input type="text" id="newEstadoCivil" placeholder="Estado Civil">  -->
+        <div >
+            <select type="text" id="newSalarioAnual">
+                <option disabled selected>__SALARIO ANUAL__</option>
+                <option value="0">Menos que $40K</option>
+                <option value="1">$40K - $60K</option>
+                <option value="2">$60K - $80K</option>
+                <option value="3">$80K - $120K</option> $120K +
+                <option value="4">$120K +</option>
+            </select>
+        </div>
+<!--    <input type="text" id="newSalarioAnual" placeholder="Salario Anual"> -->
+        <div >
+            <select type="text" id="newTipoCartao">
+                <option disabled selected>__TIPO DE CARTAO__</option>
+                <option value="0">Blue</option>
+                <option value="1">Silver</option>
+                <option value="2">Gold</option>
+                <option value="3">platinum</option>
+            </select>
+        </div>
+<!--        <input type="text" id="newTipoCartao" placeholder="Tipo Cartao"> -->
+        <input type="text" id="newMeses_de_relacionamento" placeholder="Meses de relacionamento">
+        <input type="text" id="newQtdProdutos" placeholder="Qtd Produtos">
+        <input type="text" id="newIteracoes_12_meses" placeholder="Iteracoes 12 meses">
+        <input type="text" id="newMesesInativo_12_meses" placeholder="Meses Inativo 12 meses">
+        <input type="text" id="newLimiteCredito" placeholder="Limite de credito">
+        <input type="text" id="newValorTransacoes_12_meses" placeholder="Valor Transacoes 12 meses">
+        <input type="text" id="newQtdTransacoes_12_meses" placeholder="Qtd Transacoes 12 meses">
+        <div>
+            <span onclick="newItem()" class="addBtn">Predição</span>
+        </div>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome cliente</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Dependentes</th>
+                <th>Escolaridade</th>
+                <th>Estado civil</th>
+                <th>Salario anual</th>
+                <th>Tipo de cartão</th>
+                <th>Meses de relacionamento</th>
+                <th>Qtd Produtos</th>
+                <th>Iteracoes 12 meses</th>
+                <th>Meses Inativo 12 meses</th>
+                <th>Limite de credito</th>
+                <th>Valor Transacoes 12meses</th>
+                <th>Qtd Transacoes 12 meses</th>
+                <th>Predição</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="12" height="12"></th>
+                <!-- <th><img src="img/edit.png" width="15" height="15"></th> -->
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
